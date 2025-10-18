@@ -1,1 +1,87 @@
+/* Importation de la police */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Fond du site  */
+body {
+    background-image: url("../png/fond.png");
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+ 
+/* Polices Appliquées */
+header {
+    font-family: "Bebas Neue";
+}
+
+h1 {
+    font-family: "Saira Condensed";
+}
+
+h2 {
+    font-family: "Arial";
+    color: white;
+}
+
+/* HEADER */
+.top_header a {
+  display: inline-block;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.top_header a:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.top_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #1b1a19;
+}
+
+.top_header nav {
+    display: flex;
+    gap: 20px;
+}
+
+.top_header nav a {
+    text-decoration: none;
+    color: white;
+
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav_pages a {
+    background-color: #538b32;
+}
+.nav_account a {
+    background-color: #C18845;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+
+    padding-right: 130px;    
+}
+
+.bottom_header {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    
+}
