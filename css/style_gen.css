@@ -1,25 +1,20 @@
 /* Importation de la police */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Fond du site  */
-body {
-    background-image: url("../png/fond.png");
-    background-size: cover;
-    background-attachment: fixed;
-    z-index: -1;
-}
-
  
 /* Polices Appliquées */
 header {
+    align-self: stretch;
     font-family: "Bebas Neue";
 }
 
 h1 {
+    font-size: 40px;
     font-family: "Saira Condensed";
 }
 
 h2 {
+    font-size: 20px;
     font-family: "Arial";
     color: white;
 }
@@ -43,6 +38,7 @@ h2 {
     align-items: center;
 
     background-color: #1b1a19;
+    border-radius: 10px;
 }
 
 .top_header nav {
@@ -80,8 +76,4 @@ h2 {
 .icon {
     width: 200px;
     height: auto;
-}
-
-footer {
-    
 }
