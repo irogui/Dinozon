@@ -1,0 +1,116 @@
+body {
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url("../png/fonds/fond_boutique.png");
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    width: 75%; 
+    padding: 20px;
+
+    border-radius: 5px; 
+    border: 10px ridge #303232a9; 
+
+    background-color: rgba(85, 85, 85, 0.8);
+}
+
+.accroche {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.terrestre, marin, volant {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+
+    border-radius: 5px;
+    border: 5px ridge #303232a9;
+
+    padding: 20px;
+
+    overflow-x: auto;  
+    overflow-y: hidden; 
+    scroll-behavior: smooth; 
+}
+
+.catalogue::-webkit-scrollbar {
+    height: 10px; 
+}
+
+.catalogue::-webkit-scrollbar-thumb {
+    background: #C18845; 
+    border-radius: 5px;
+}
+
+.catalogue::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.card {
+    border-radius: 3px;
+    border: 5px solid  #E3CD8B;
+
+    padding: 5px;
+
+    background-color: #7a5631;
+
+    width: 210px;
+    height: auto;
+
+    font-family: "Bebas Neue";
+    color: white;
+}
+
+.card a {
+    display: flex;
+    justify-content: center;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+
+    background-color: rgb(86, 86, 86);
+    border-radius: 3px;
+}
+
+.carac1 {
+    text-align: center;
+    font-size: 30px;
+
+    padding-bottom: 15px;
+    padding-top: 5px;    
+}
+
+.carac1 h4 {
+    opacity: 0.8;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: italic;
+
+    margin: 3px;
+}
+
+.carac1 h3 {
+    margin: 0px;
+}
+
+.carac2 h3 {
+    text-align: start;
+    font-size: 20px;
+    font-weight: lighter;
+    color: rgb(205, 205, 205);
+
+    margin: 2px;
+    padding-left: 5px;
+}
