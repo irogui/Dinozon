@@ -10,4 +10,4 @@ Grâce à notre **Dinozon** vous allez déjà pouvoir y découvrir une douzaine 
 - À propos -> Antoine Mecenero-chretien
 
 Lien vers la page d'accueil:
-https://irogui.github.io/Dinozon/
+https://irogui.github.io/Dinozon/accueil
