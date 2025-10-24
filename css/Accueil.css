@@ -23,7 +23,7 @@ body {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #f1f1f1;
+    background-color: #1b1a19;
     display: flex;
     justify-content: space-evenly;
     left: 0;
@@ -62,5 +62,6 @@ footer {
     margin: 10px;
 
 }
+
 
 
