@@ -112,8 +112,10 @@ h2{
     color: black;
 }
 
+
+
 body {
-    background-image: url("../png/fonds/fond_boutique.png");
+    background-image: url("../png/fonds/fond_histoire.jpeg");
     background-size: cover;
     background-attachment: fixed;
     z-index: -1;
