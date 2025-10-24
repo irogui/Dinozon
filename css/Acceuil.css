@@ -3,6 +3,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-image: url("../png/fond_boutique.png");
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
 }
 
 .texte {
@@ -56,4 +60,5 @@ footer {
 
 .footer_cont {
     margin: 10px;
+
 }
