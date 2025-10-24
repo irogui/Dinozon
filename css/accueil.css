@@ -1,7 +1,5 @@
 html,
 body {
-    margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
     background-image: url("../png/fonds/fond_accueil.png");
     background-size: cover;
@@ -26,11 +24,10 @@ footer {
     background-color: #1b1a19;
     display: flex;
     justify-content: space-evenly;
-    left: 0;
-    bottom: 0;
     width: 100%;
     min-height: 100px;
-    border
+    border-radius: 10px;
+    space
 }
 
 
@@ -69,5 +66,4 @@ footer {
 .footer_cont > h4 {
     color: white;
 }
-
 
