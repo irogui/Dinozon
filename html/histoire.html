@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 
     <title>Dinozon | A propos</title>
 
@@ -14,7 +15,9 @@
 
     <!-- Importation CSS boutique -->
     <link rel="stylesheet" href="../css/histoire.css">
+    
 </head>
+
 <body>
     <header>
         <div class="top_header">
@@ -23,10 +26,9 @@
             </a>
 
             <nav class="nav_pages">
-                <a href="boutique.html">Boutique</a>
                 <a href="panier.html">Panier</a>
                 <a href="histoire.html">Plus d'info</a>
-            </nav>
+            </nav> 
 
             <nav class="nav_account">
                 <a href="#">Se connecter</a>
@@ -41,6 +43,8 @@
         </div>
 
     </header>
+
+
 
 
     <div class = "histoire">
@@ -98,5 +102,60 @@
         </h1>
     </div>
 
+
+    <form action="/ma-page-de-traitement" method="post">
+        <ul>
+            <li>
+                <label for="name">Nom&nbsp;:</label>
+                <input type="text" id="name" name="user_name" />
+            </li>
+            
+            <li>
+                <label for="mail">E-mail&nbsp;:</label>
+                <input type="email" id="mail" name="user_mail" />
+            </li>
+            
+            <li>
+                <label for="msg">Message&nbsp;:</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </li>
+        </ul>
+            <div class="button">
+                <button type="submit">Envoyer le message</button>
+            </div>
+    </form>
+
 </body>
+
+<footer>
+    <div class="footer_container">
+
+        <div class="footer_box">
+            <h4>Propriétés:</h4>
+            <p>Site créé par les étudiants :</p>
+            <p class="footer_names">Py Julien, Rogui Issam, Leveque Guilian, Mecenero-Chretien Antoine</p>
+            <p class="footer_source">Images provenant du jeu vidéo ARK: Survival Evolved</p>
+        </div>
+
+        <div class="footer_box">
+            <h4>Retrouvez-nous:</h4>
+            <nav class="footer_socials">
+                <a href="#"><img src="../png/accueil/discord.png" alt="Discord">Discord</a>
+                <a href="#"><img src="../png/accueil/instagram.png" alt="Instagram">Instagram</a>
+                <a href="#"><img src="../png/accueil/youtube.png" alt="Youtube">YouTube</a>
+            </nav>
+        </div>
+
+        <div class="footer_box">
+            <h4>Emplacement entreprise:</h4>
+            <img src="../png/accueil/pangée.png" alt="Pangée" class="footer_img">
+            <p>-170 millions d'années av. J.-C.</p>
+        </div>
+
+    </div>
+
+    <div class="footer_bottom">
+        <p>© 2025 Dinozon. Tous droits réservés.</p>
+    </div>
+</footer> 
 </html>
