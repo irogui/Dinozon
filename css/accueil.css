@@ -1,17 +1,22 @@
-html,
-body {
-    font-family: Arial, sans-serif;
-    background-image: url("../png/fonds/fond_accueil.png");
-    background-size: cover;
-    background-attachment: fixed;
-    z-index: -1;
+@media (min-width: 765px) {
+    html,
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;    
+        flex-direction: column;
+        align-items: center;
+        background-image: url("../png/fonds/fond_accueil.png");
+        background-size: cover;
+        background-attachment: fixed;
+        z-index: -1;
+    }
 }
 
-.texte_box {
-    text-align: center;
-    width: 75%; 
-    padding: 20px;
-    border-radius: 5px; 
-    box-shadow: 1px 0px 5px 5px rgb(151, 151, 151);
-    background-color: rgba(70, 69, 69, 0.8);
-}
+    .texte_box {
+        text-align: center;
+        width: 75%; 
+        padding: 20px;
+        border-radius: 5px; 
+        box-shadow: 1px 0px 5px 5px rgb(151, 151, 151);
+        background-color: rgba(70, 69, 69, 0.8);
+    }
