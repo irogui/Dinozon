@@ -7,11 +7,11 @@ body {
     z-index: -1;
 }
 
-.texte {
+.texte_box {
     text-align: center;
-    padding: 50px;
-    background-color: #f9f9f9;
-    font-size: 24px;
-    color: #333;
-    min-height: 2000px;
+    width: 75%; 
+    padding: 20px;
+    border-radius: 5px; 
+    box-shadow: 1px 0px 5px 5px rgb(151, 151, 151);
+    background-color: rgba(70, 69, 69, 0.8);
 }
