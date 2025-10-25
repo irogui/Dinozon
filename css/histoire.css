@@ -1,6 +1,8 @@
 .histoire {
-    background-color: blue;
-    border: 50px, solid, orange;
+    border: 50px, solid, #538b32;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 
@@ -15,74 +17,236 @@ header {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 2rem;
+    margin-bottom: 1rem;
     font-family: "Saira Condensed";
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
     font-family: "Arial";
     color: white;
 }
 
-/* HEADER */
-.top_header a {
-  display: inline-block;
-  border-radius: 8px;
-  transition: all 0.3s ease;
+p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
 }
 
-.top_header a:hover {
-  transform: scale(1.05);
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    
+/* HEADER (Ordinateur)*/
+@media (min-width: 765px) {
+
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-self: stretch;
+        font-family: "Bebas Neue";
+
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 10;
+
+        background-color: #1b1a19;
+        border-radius: 10px;
+    }
+
+    header a {
+        display: inline-block;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+
+    header a:hover {
+        transform: scale(1.05);
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    }
+
+    header nav {
+        display: flex;
+        gap: 20px;
+    }
+
+    header nav a {
+        text-decoration: none;
+        color: white;
+
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav_pages a {
+        background-color: #538b32;
+    }
+    .nav_account a {
+        background-color: #C18845;
+    }
+
+    .logo {
+        width: 100px;
+        height: auto;
+
+        padding-right: 130px;    
+    }
+
+    .bottom_header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .icon {
+        width: 200px;
+        height: auto;
+    }
 }
 
-.top_header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+/* HEADER (mobile)*/
+@media (max-width: 765px) and (min-width: 360px) {
 
-    background-color: #1b1a19;
-    border-radius: 10px;
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-self: stretch;
+        font-family: "Bebas Neue";
+
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 10;
+
+        background-color: #1b1a19;
+        border-radius: 10px;
+    }
+
+    header a {
+        display: inline-block;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+
+    header a:hover {
+        transform: scale(1.05);
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a {
+        text-decoration: none;
+        color: white;
+
+        padding: 5px;
+        margin: 2px;
+
+        width: 100px;
+    }
+
+    .nav_pages a {
+        background-color: #538b32;
+    }
+    .nav_account a {
+        background-color: #C18845;
+    }
+
+    .logo {
+        width: 100px;
+        height: auto;
+    }
+
+    .bottom_header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .icon {
+        width: 0px;
+        height: auto;
+    }
 }
 
-.top_header nav {
-    display: flex;
-    gap: 20px;
+
+/* HEADER (Microndes (oui c'est de l'abus...) )*/
+@media (max-width: 360px) {
+
+    header {
+        display: flex;
+        align-items: center;
+        align-self: stretch;
+        flex-direction: column;
+
+        font-family: "Bebas Neue";
+
+        background-color: #1b1a19;
+        border-radius: 10px;
+    }
+
+    header a {
+        display: inline-block;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+
+    header a:hover {
+        transform: scale(1.05);
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 80%;
+    }
+
+    header nav a {
+        text-decoration: none;
+        color: white;
+
+        padding: 10px;
+        margin: 2px;
+
+        text-align: center;
+
+        width: 100%;
+    }
+
+    .nav_pages a {
+        background-color: #538b32;
+    }
+    .nav_account a {
+        background-color: #C18845;
+    }
+
+    .logo {
+        width: 100px;
+        height: auto;
+    }
+
+    .bottom_header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .icon {
+        width: 0px;
+        height: auto;
+    }
 }
 
-.top_header nav a {
-    text-decoration: none;
-    color: white;
 
-    padding: 10px;
-    border-radius: 5px;
-}
 
-.nav_pages a {
-    background-color: #538b32;
-}
-.nav_account a {
-    background-color: #C18845;
-}
-
-.logo {
-    width: 100px;
-    height: auto;
-
-    padding-right: 130px;    
-}
-
-.bottom_header {
-    display: flex;
-    justify-content: center;
-}
-
-.icon {
-    width: 200px;
-    height: auto;
-}
 
 
 .histoire{
@@ -103,7 +267,7 @@ h2 {
     
 }
 .histoire:hover{
-    background-color: green;
+    background-color: #F0BE86;
     transform: scale(1.05);
     transition: 500ms;
 }
@@ -119,4 +283,250 @@ body {
     background-size: cover;
     background-attachment: fixed;
     z-index: -1;
+}
+
+
+
+
+
+/* formulaire */
+form {
+    /* On centre le formulaire */
+    margin: 0 auto;
+    width: 400px;
+    
+    /* Le contour du formulaire */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    
+    /*couleur de l'arrière plan*/
+    background-color: #F0BE86;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li + li {
+    margin-top: 1em;
+}
+        
+label {
+    /* Taille et alignement uniformes */
+    display: inline-block; /*rend le lien un bloc en ligne — il accepte largeur/hauteur/padding tout en restant dans le flux en ligne.*/
+    width: 90px;
+    text-align: right;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input, textarea {
+    /* On s'assure que les champs texte ont la même police
+    Par défaut, les zones de texte ont une police à chasse
+    fixe. */
+    font: 1em sans-serif;
+
+    /* Taille uniforme pour des champs */
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+            
+    /* On utilise la même bordure que pour le formulaire */
+    border: 1px solid #999;
+}
+        
+input:focus,textarea:focus {
+    /* On rajoute une mise en avant pour les éléments avec
+    le focus. */
+    border-color: #000;
+}
+
+textarea {
+    /* On aligne les textes sur plusieurs lignes avec leur
+    libellé. */
+    vertical-align: top;
+    
+    /* On fournit un peut d'espace pour saisir du texte. */
+    height: 5em;
+            
+    /* On permet de redimensionner verticalement. */
+    resize: vertical;
+}
+        
+.button {
+    /* On aligne les boutons avec les champs texte. */
+    padding-left: 90px; /* La même taille que les libellés */
+    text-align: center;
+    margin-top: 1rem;
+}
+
+button {
+    /* Une marge supplémentaire représentant approximativement
+    le même espace qu'entre les libellés et les champs. */
+    margin-left: 0.5em;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {  /* C’est une media query qui s’applique quand la largeur de la fenêtre est <= 768px */
+    .histoire {
+        padding: 1rem; /* Réduit l’espace intérieur du conteneur */
+    }
+    h1 {
+        font-size: 1.75rem; /* Diminue la taille des titres h1. */
+    }
+    h2 {
+        font-size: 1.25rem; /*diminue la taille des titres h2.*/
+    }
+    /*Donc il y a moins d’espace et des titres plus petits pour mieux s’adapter aux écrans étroits.*/
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.1rem;
+    }
+    form {
+        padding: 0.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+/* Footer (ordinateur) */
+
+footer {
+    background-color: #1b1a19;
+    color: white;
+
+    font-family: "Saira Condensed";
+
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.4);
+
+    margin-top: 50px;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    padding: 30px 20px;
+    gap: 40px;
+}
+
+.footer_box {
+    text-align: center;
+    
+    min-width: 250px;
+    max-width: 350px;
+}
+
+.footer_box h4 {
+    font-family: "Bebas Neue";
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #C18845;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer_box p {
+    font-size: 15px;
+    color: rgba(255,255,255,0.85);
+    margin: 5px 0;
+}
+
+.footer_names {
+    color: #538b32;
+    font-weight: 600;
+}
+
+.footer_source {
+    font-style: italic;
+    color: rgba(255,255,255,0.6);
+}
+
+.footer_socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer_socials a {
+    color: white;
+    text-decoration: none;
+    background-color: #538b32;
+    border-radius: 8px;
+    padding: 6px 12px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.footer_socials a:hover {
+    transform: scale(1.05);
+    background-color: #6bb84b;
+    box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+.footer_socials img {
+    width: 18px;
+    height: 18px;
+}
+
+.footer_img {
+    width: 120px;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.footer_img:hover {
+    transform: scale(1.1);
+}
+
+.footer_bottom {
+    text-align: center;
+    background-color: #141312;
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+}
+
+/* Footer (mobile) */
+@media (max-width: 765px) {
+    .footer_container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer_box {
+        max-width: 90%;
+    }
+
+    .footer_socials a {
+        width: 200px;
+    }
 }
