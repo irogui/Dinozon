@@ -1,6 +1,6 @@
 @media (min-width: 765px) {
     body {
-        background-image: url("../png/fonds/fond_boutique.png");
+        background-image: url("../png/fonds/fond_accueil.png");
         background-size: cover;
         background-attachment: fixed;
         z-index: -1;
@@ -106,17 +106,17 @@
     }
 
     .carte.terre img {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../png/fonds/fond_terre.png");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../png/cartes/fond_terre.png");
         background-size: cover;
     }
 
     .carte.aire img {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../png/fonds/fond_aire.png");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../png/cartes/fond_aire.png");
         background-size: cover;
     }
 
     .carte.eau img {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../png/fonds/fond_eau.png");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../png/cartes/fond_eau.png");
         background-size: cover;
     }
 
@@ -315,17 +315,17 @@
     }
 
     .carte.terre img {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../png/fonds/fond_terre.png");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../png/cartes/fond_terre.png");
         background-size: cover;
     }
 
     .carte.aire img {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../png/fonds/fond_aire.png");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../png/cartes/fond_aire.png");
         background-size: cover;
     }
 
     .carte.eau img {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../png/fonds/fond_eau.png");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../png/cartes/fond_eau.png");
         background-size: cover;
     }
 
@@ -425,4 +425,5 @@
 
 
 }
+
 
