@@ -11,14 +11,14 @@
     <link rel="icon" type="image/png" href="../png/dinozon_icon.png">
 
     <!-- importation CSS générale -->
-    <link rel="stylesheet" href="../css/style_gen.css">
+    <link rel="stylesheet" href="style_gen.css">
 
-    <!-- Importation CSS boutique -->
-    <link rel="stylesheet" href="../css/accueil.css">
+    <!-- Importation CSS accueil -->
+    <link rel="stylesheet" href="accueil.css">
 </head>
 
 <body>
-    
+
     <!-- Contenu du header -->
 
     <header>
@@ -37,20 +37,234 @@
             <a href="#">Créer un compte</a>
         </nav>
     </header>
-    
-        <!-- Contenu de la page -->
-    
-    <div class="page">
 
-    <div class="texte_box">
-        <h3>Bienvenu sur le site de Dinozon!</h3>
+    <!-- Contenu de la page -->
 
-        <div>
-            <p>Ici, vous pouvez choisirs parmis notre sélection de dinosaure que nous délivererons chez vous.</p>
+    <main>
+
+        <div class="content_box">
+
+            <div class="titre">
+                Dinozon
+            </div>
+
+            <div class="slogan">
+                <p>Un clic pour terrasser l’extinction!</p>
+            </div>
+
+            <!-- menu des ventes -->
+            <div class="top">
+
+                <h1>Achats les plus populaires :</h1>
+
+                <div class="top_ventes">
+
+                    <button class="precedant">◀</button>
+
+                    <div class="vente">
+
+                        <!-- Ptéranodon -->
+                        <div class="carte aire">
+                            <!-- Image créature -->
+                            <a href="#">
+                                <img src="images/ptéranodon.png" alt="Ptéranodon">
+                            </a>
+                            <!-- Caractéristiques créatures -->
+                            <div>
+                                <div class="nom">
+                                    <h3>Archie</h3>
+                                    <h4>Ptéranodon</h4>
+                                </div>
+
+                                <div class="attributs">
+                                    <h3>Prix: 450€</h3>
+                                    <h3>Envergure: 8m</h3>
+                                    <h3>Temps: Crétacé</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mammouth -->
+                        <div class="carte terre">
+                            <!-- Image créature -->
+                            <a href="#">
+                                <img src="images/mammouth.png" alt="Mammouth">
+                            </a>
+                            <!-- Caractéristiques créatures -->
+                            <div>
+                                <div class="nom">
+                                    <h3>Manny</h3>
+                                    <h4>Mammouth</h4>
+                                </div>
+
+                                <div class="attributs">
+                                    <h3>Prix: 800€</h3>
+                                    <h3>Longueur: 6m</h3>
+                                    <h3>Temps: Miocène</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Troodon -->
+                        <div class="carte terre">
+                            <!-- Image créature -->
+                            <a href="#">
+                                <img src="images/troodon.png" alt="Troodon">
+                            </a>
+                            <!-- Caractéristiques créatures -->
+                            <div>
+                                <div class="nom">
+                                    <h3>Xeno</h3>
+                                    <h4>Troodon</h4>
+                                </div>
+
+                                <div class="attributs">
+                                    <h3>Prix: 500€</h3>
+                                    <h3>Taille: 2m</h3>
+                                    <h3>Temps: Crétacé</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mosasaure -->
+                        <div class="carte eau">
+                            <!-- Image créature -->
+                            <a href="#">
+                                <img src="images/mosasaure.png" alt="Mosasaure">
+                            </a>
+                            <!-- Caractéristiques créatures -->
+                            <div>
+                                <div class="nom">
+                                    <h3>Mirex</h3>
+                                    <h4>Mosasaure</h4>
+                                </div>
+
+                                <div class="attributs">
+                                    <h3>Prix: 1200€</h3>
+                                    <h3>Taille: 18m</h3>
+                                    <h3>Temps: Créatacé</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carte">
+                            <!-- Image créature -->
+                            <a href="#">
+                                <img src="images/quetzalcoatlus.png" alt="Quetzalcoatlus">
+                            </a>
+                            <!-- Caractéristiques créatures -->
+                            <div>
+                                <div class="nom">
+                                    <h3>Murene</h3>
+                                    <h4>Quetzalcoatlus</h4>
+                                </div>
+
+                                <div class="attributs">
+                                    <h3>Prix: 900€</h3>
+                                    <h3>Envergure: 10m</h3>
+                                    <h3>Temps: Crétacé</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="suivant">▶</button>
+
+                </div>
+            </div>
+
+            <!-- Menu des réduction à venir -->
+
+            <div class="reduc">
+
+                <p>Réductions à venirs:</p>
+
+                <div class="reduc_carte">
+
+                    <!-- Dunkleosteus -->
+                    <div class="carte eau">
+                        <!-- Image créature -->
+                        <a href="#">
+                            <img src="images/dunkleosteus.png" alt="Dunkleosteus">
+                        </a>
+                        <!-- Caractéristiques créatures -->
+                        <div>
+
+                            <div class="nom">
+                                <h3>Preda</h3>
+                                <h4>Dunkleosteus</h4>
+                            </div>
+
+                            <div class="attributs">
+                                <div class="prix_reduc">
+                                    <h3>Prix:
+                                        <span class="prix_barre">650€</span> -> 499€
+                                    </h3>
+                                </div>
+                                <h3>Longeur: 8m</h3>
+                                <h3>Temps: Dévonien</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Oiseau-Terreur -->
+                    <div class="carte terre">
+                        <!-- Image créature -->
+                        <a href="#">
+                            <img src="images/oiseau-terreur.png" alt="Oiseau-Terreur">
+                        </a>
+                        <!-- Caractéristiques créatures -->
+                        <div>
+                            <div class="nom">
+                                <h3>Phorus</h3>
+                                <h4>Oiseau de Terreur</h4>
+                            </div>
+
+                            <div class="attributs">
+                                <div class="prix_reduc">
+                                    <h3>Prix:
+                                        <span class="prix_barre">450€</span> -> 399€
+                                    </h3>
+                                </div>
+                                <h3>Taille: 3m</h3>
+                                <h3>Temps: Paléocène</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Allosaure -->
+                    <div class="carte terre">
+                        <!-- Image créature -->
+                        <a href="#">
+                            <img src="images/allosaure.png" alt="Allosaure">
+                        </a>
+                        <!-- Caractéristiques créatures -->
+                        <div>
+
+                            <div class="nom">
+                                <h3>Elios</h3>
+                                <h4>Allosaure</h4>
+                            </div>
+
+                            <div class="attributs">
+                                <div class="prix_reduc">
+                                    <h3>Prix:
+                                        <span class="prix_barre">700€</span> -> 599€
+                                    </h3>
+                                </div>
+                                <h3>Longeur: 9m</h3>
+                                <h3>Temps: Jurassique</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-    </div>
+    </main>
 
-        <!-- Footer -->
+    <!-- Footer -->
 
     <footer>
         <div class="footer_container">
@@ -82,10 +296,11 @@
         <div class="footer_bottom">
             <p>© 2025 Dinozon. Tous droits réservés.</p>
         </div>
-        
+
     </footer>
-        
-    </div>
+
+    <script src="accueil.js"></script>
+
 </body>
 
 </html>
