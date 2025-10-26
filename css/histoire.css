@@ -279,7 +279,7 @@ h2{
 
 
 body {
-    background-image: url("../png/fonds/fond_histoire.jpeg");
+    background-image: url("../png/fonds/fond_histoire.png");
     background-size: cover;
     background-attachment: fixed;
     z-index: -1;
