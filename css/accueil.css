@@ -196,6 +196,7 @@
 
     .reduc .attributs {
         font-size: 20px;
+        font-weight: normal;
     }
 
     .prix_reduc {
@@ -340,6 +341,7 @@
         margin-bottom: 0px;
         line-height: 1.2em;
         font-size: 4.5vw;
+        font-weight: normal;
     }
 
     .top_ventes .nom h4 {
@@ -412,7 +414,7 @@
         flex-direction: column;
     }
 
-    .attributs h3 {
+    .reduc .attributs h3 {
         margin: 0;
         font-weight: normal;
     }
@@ -428,6 +430,7 @@
 
 
 }
+
 
 
 
