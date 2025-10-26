@@ -129,18 +129,19 @@
     .top_ventes .nom h3 {
         margin-bottom: 0px;
         line-height: 0.1vw;
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
 
     .top_ventes .nom h4 {
         line-height: 0.1vw;
-        font-size: 1.5vw;
+        font-size: 2vw;
         font-style: italic;
         opacity: 0.8;
     }
 
-    .top_ventes .attributs {
-        font-size: 1vw;
+    .top_ventes .attributs h3{
+        font-size: 1.5vw;
+        font-weight: normal;
     }
 
     .reduc {
@@ -346,6 +347,7 @@
         font-size: 3.5vw;
         font-style: italic;
         opacity: 0.8;
+        margin: 0px;
     }
 
     .top_ventes .attributs {
@@ -412,6 +414,7 @@
 
     .attributs h3 {
         margin: 0;
+        font-weight: normal;
     }
 
     .prix_reduc {
@@ -425,6 +428,7 @@
 
 
 }
+
 
 
 
