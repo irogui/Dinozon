@@ -115,7 +115,7 @@ body{
     .footer_box {
         display: flex;
         flex-direction: column;
-        color: black;
+        color: #000000;
     }
 
     .footer_cont {
