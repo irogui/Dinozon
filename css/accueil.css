@@ -106,17 +106,17 @@
     }
 
     .carte.terre img {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/fond_terre.png");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../png/cartes/fond_terre.png");
         background-size: cover;
     }
 
     .carte.aire img {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/fond_aire.png");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../png/cartes/fond_aire.png");
         background-size: cover;
     }
 
     .carte.eau img {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/fond_eau.png");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../png/cartes/fond_eau.png");
         background-size: cover;
     }
 
@@ -315,17 +315,17 @@
     }
 
     .carte.terre img {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/fond_terre.png");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../png/cartes/fond_terre.png");
         background-size: cover;
     }
 
     .carte.aire img {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/fond_aire.png");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../png/cartes/fond_aire.png");
         background-size: cover;
     }
 
     .carte.eau img {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/fond_eau.png");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../png/cartes/fond_eau.png");
         background-size: cover;
     }
 
@@ -425,3 +425,4 @@
     }
 
 }
+
