@@ -115,6 +115,118 @@
             </div>
     </form>
 
+    <div class="jeu_dinosaures">
+    <h2>Quiz Dino</h2>
+
+    <p id="question"></p>
+
+    <div id="answers"></div>
+
+    <button id="nextBtn" style="display:none;">Question suivante</button>
+
+    <p id="score"></p>
+</div>
+<script>
+const quiz = [
+    {
+        question: "Quel dinosaure a des plaques sur le dos ?",
+        answers: ["T-Rex", "Stégosaure", "Velociraptor"],
+        correct: 1
+    },
+    {
+        question: "Quel dinosaure a des cornes ?",
+        answers: ["Tricératops", "Diplodocus", "T-Rex"],
+        correct: 0
+    },
+    {
+        question: "Quel est le plus grand ?",
+        answers: ["Velociraptor", "Brachiosaure", "T-Rex"],
+        correct: 1
+    },
+    {
+        question: "Quel dinosaure peut voler ?",
+        answers: ["Ptéranodon", "Stegosaure", "Tricératops"],
+        correct: 0
+    },
+    {
+        question: "Dans quel film la citation suivante est présente : 'La vie trouve toujours un chemin' ?",
+        answers: ["Jurassic Park", "Le Monde Perdu", "Jurassic World"],
+        correct: 0
+    },
+
+    {
+        question: "Dans quel film la citation suivante est présente : 'Les dinosaures sont des créatures fascinantes' ?",
+        answers: ["Jurassic Park", "Le Monde Perdu", "Jurassic World"],
+        correct: 2
+    }
+];
+
+let currentQuestion = 0;
+let score = 0;
+
+const questionEl = document.getElementById("question");
+const answersEl = document.getElementById("answers");
+const nextBtn = document.getElementById("nextBtn");
+const scoreEl = document.getElementById("score");
+
+function showQuestion() {
+    nextBtn.style.display = "none";
+    answersEl.innerHTML = "";
+
+    let q = quiz[currentQuestion];
+    questionEl.textContent = q.question;
+
+    q.answers.forEach((answer, index) => {
+        const btn = document.createElement("button");
+        btn.textContent = answer;
+
+        btn.onclick = () => selectAnswer(btn, index);
+        answersEl.appendChild(btn);
+    });
+}
+
+function selectAnswer(button, index) {
+    const correctIndex = quiz[currentQuestion].correct;
+    const buttons = answersEl.querySelectorAll("button");
+
+    buttons.forEach((btn, i) => {
+        btn.disabled = true;
+
+        if (i === correctIndex) {
+            btn.classList.add("correct");
+        } else if (i === index) {
+            btn.classList.add("wrong");
+        }
+    });
+
+    if (index === correctIndex) {
+        score++;
+    }
+
+    nextBtn.style.display = "block";
+}
+
+nextBtn.onclick = () => {
+    currentQuestion++;
+
+    if (currentQuestion < quiz.length) {
+        showQuestion();
+    } else {
+        showScore();
+    }
+};
+
+function showScore() {
+    questionEl.textContent = "Quiz terminé !";
+    answersEl.innerHTML = "";
+    nextBtn.style.display = "none";
+
+    scoreEl.textContent = "Score : " + score + " / " + quiz.length;
+}
+
+showQuestion();
+</script>
+
 </body>
 
 
