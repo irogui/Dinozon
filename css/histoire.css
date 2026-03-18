@@ -34,7 +34,130 @@ p {
     margin-bottom: 1rem;
 }
 
-    
+
+
+
+/* QUIZ */
+.jeu_dinosaures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 60px auto;
+    padding: 30px;
+    max-width: 900px;
+
+    background: linear-gradient(135deg, #f4f4f4, #e8f5e9);
+    border-radius: 15px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+    font-weight: 500;
+    color: #222;
+
+    line-height: 1.6;
+}
+
+/* Titre */
+.jeu_dinausores h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2e7d32;
+}
+
+/* Questions */
+.jeu_dinausores p {
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+/* Liste des réponses */
+.jeu_dinausores ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Boutons réponses */
+.jeu_dinausores button {
+    width: 100%;
+    padding: 10px 15px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #538b32;
+    color: white;
+
+    font-size: 1rem;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+/* Hover bouton */
+.jeu_dinausores button:hover {
+    background-color: #6bb84b;
+    transform: scale(1.03);
+}
+
+/* Click effet */
+.jeu_dinausores button:active {
+    transform: scale(0.97);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .jeu_dinausores {
+        padding: 20px;
+    }
+
+    .jeu_dinausores h2 {
+        font-size: 1.5rem;
+    }
+
+    .jeu_dinausores p {
+        font-size: 1rem;
+    }
+}
+
+
+
+#answers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+#answers button {
+    background-color: #538b32;
+}
+
+#answers button.correct {
+    background-color: #2e7d32; /* vert */
+}
+
+#answers button.wrong {
+    background-color: #c62828; /* rouge */
+}
+
+#nextBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #C18845;
+    color: white;
+    cursor: pointer;
+}
+
+
+
 /* HEADER (Ordinateur)*/
 @media (min-width: 765px) {
 
